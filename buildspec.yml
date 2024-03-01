@@ -1,0 +1,18 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo Starting build step
+      - mvn clean package
+  test:
+    commands:
+      - echo Starting testing step
+      - mvn test
+  post_build:
+    commands:
+      - echo Build completed successfully
+artifacts:
+  files:
+    - target/cicd-example.jar
+  discard-paths: yes
