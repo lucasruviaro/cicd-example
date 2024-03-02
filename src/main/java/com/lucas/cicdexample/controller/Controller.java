@@ -10,7 +10,7 @@ public class Controller {
 
     @GetMapping
     public String getGreeting(){
-        return "Welcome to the API";
+        return "Welcome to the API, user!";
     }
 
 }
