@@ -16,5 +16,5 @@ phases:
       - echo "Building complete"
 artifacts:
   files:
-    - target/cicd-example.jar
+    - target/*.jar
   discard-paths: yes
