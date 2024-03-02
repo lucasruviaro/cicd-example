@@ -10,14 +10,10 @@ phases:
   build:
     commands:
       - echo "Starting building stage"
-      - mvn clean package
+      - mvn test package
   post_build:
     commands:
       - echo "Building complete"
-  test: 
-    commands:
-      - echo "Starting testing stage"
-      - mvn test 
 artifacts:
   files:
     - target/cicd-example.jar
