@@ -20,6 +20,6 @@ public class ControllerTest {
     public void testGetGreeting() throws Exception {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Welcome to the API"));
+                .andExpect(content().string("Welcome to the API, user!"));
     }
 }
