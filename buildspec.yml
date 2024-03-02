@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
      runtime-versions:
-      java: 17
+      java: 11
   pre_build:
     commands:
       - echo "Pre-building starting"
